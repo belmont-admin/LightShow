@@ -71,3 +71,9 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 ```
+
+## Step 6 @fullscreen
+
+Connect your @boardname@, pair it and then use the ``||Download||`` button to send your code to the @boardname@
+
+Finally make sure you **save** your code.
