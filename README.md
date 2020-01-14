@@ -1,4 +1,4 @@
- # Make remote controlled light show
+ # Make a remote controlled light show
 
 ## Introduction @unplugged
 
@@ -36,7 +36,7 @@ Add code so that when button ``|A|`` is pressed the channel number is decreased 
 
 ## Step 4 @fullscreen
 
-Use a ``||radio:on radio received (received string)||`` block to write code that will turn on the red light for 1 second when the message **red** is received via the radio.
+Use an ``||radio:on radio received (received string)||`` block to write code that will turn on the red light for 1 second when the message **red** is received via the radio.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
