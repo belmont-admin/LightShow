@@ -6,7 +6,7 @@ radio.onReceivedString(function (receivedString) {
     } else if (receivedString == "green") {
         pins.digitalWritePin(DigitalPin.P2, 1)
     }
-    basic.pause(delay)
+    basic.pause(250)
     pins.digitalWritePin(DigitalPin.P0, 0)
     pins.digitalWritePin(DigitalPin.P1, 0)
     pins.digitalWritePin(DigitalPin.P2, 0)
@@ -16,17 +16,12 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(channel)
     radio.setGroup(channel)
 })
-radio.onReceivedNumber(function (receivedNumber) {
-    delay = receivedNumber
-})
 input.onButtonPressed(Button.A, function () {
     channel += -1
     basic.showNumber(channel)
     radio.setGroup(channel)
 })
-let delay = 0
 let channel = 0
 channel = 1
-delay = 1000
 basic.showNumber(channel)
 radio.setGroup(1)
